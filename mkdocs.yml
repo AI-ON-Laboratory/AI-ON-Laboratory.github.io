@@ -1,0 +1,61 @@
+site_name: AI-ON-Lab Wiki
+theme:
+  name: material
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: red
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: blue
+      accent: lime
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/images.css
+
+nav:
+  - Home: index.md
+  - Laboratory:
+    - Instructions: laboratory/instructions.md
+  - I3Lung tool:
+    - Instructions: i3lung-tool/instructions.md
+  - I3Lung data curation:
+    - Instructions: i3lung-data-curation/instructions.md
+  - I3Lung data analysis:
+    - Instructions: i3lung-data-analysis/instructions.md
+  - Master students:
+    - Instructions: master/instructions.md
+  - Calendar: calendar/calendar.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
