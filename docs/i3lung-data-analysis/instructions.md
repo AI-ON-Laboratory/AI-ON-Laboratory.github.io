@@ -3,4 +3,4 @@
 </head>
 
 
-![Tool image](../assets/analysis.jpg){: .immagine-stilizzata}
+![Tool image](../assets/analysis.jpg){: .styled-image}

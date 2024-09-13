@@ -1,3 +1,26 @@
+body,
+body * {
+    transition: background-color 0.3s ease;
+}
+
+.md-header,
+.md-tabs,
+.md-search__input,
+.md-nav__link,
+.md-footer {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-typeset code {
+    transition: color 0.1s ease;
+}
+
 :root {
     --md-primary-fg-color: transparent;
     --md-primary-fg-color--light: transparent;
@@ -10,7 +33,6 @@
     color: var(--md-typeset-color);
     background-color: var(--md-default-bg-color);
     box-shadow: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .md-header[data-md-state="shadow"] {

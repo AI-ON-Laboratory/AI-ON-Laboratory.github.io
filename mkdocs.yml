@@ -17,16 +17,16 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: teal
       accent: red
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: blue
-      accent: lime
+      accent: blue
 
 extra_css:
   - stylesheets/extra.css
@@ -34,17 +34,16 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Laboratory:
-    - Instructions: laboratory/instructions.md
-  - I3Lung tool:
+  - Laboratory 🧪:
+    - Laboratory: laboratory/instructions.md
+  - I3Lung tool 🤖:
     - Instructions: i3lung-tool/instructions.md
-  - I3Lung data curation:
+  - I3Lung data curation 🛠️:
     - Instructions: i3lung-data-curation/instructions.md
-  - I3Lung data analysis:
+  - I3Lung data analysis 📊:
     - Instructions: i3lung-data-analysis/instructions.md
-  - Master students:
+  - Master students 🎓:
     - Instructions: master/instructions.md
-  - Calendar: calendar/calendar.md
 
 markdown_extensions:
   - pymdownx.highlight:
