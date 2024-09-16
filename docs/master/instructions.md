@@ -1,8 +1,3 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/images.css">
-</head>
-
-
 ![Tool image](../assets/master.jpg){: .styled-image}
 
 ## Get wifi access 🛜
@@ -17,7 +12,6 @@ To get you MAC address, follow the instructions below:
 Give the MAC address to Vanja, she will forward it to the IT department.
 
 ## Set up for coding 💻
-### Installing VSCode, Python, and Jupyter
 
 ### Install Python 3.11 🐍
 
