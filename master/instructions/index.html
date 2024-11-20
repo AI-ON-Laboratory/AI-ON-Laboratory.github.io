@@ -514,9 +514,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-vscode" class="md-nav__link">
+  <a href="#install-visual-studio-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Install VSCode 📁
+      Install Visual Studio Code 📁
     </span>
   </a>
   
@@ -526,6 +526,51 @@
   <a href="#install-jupyter-extension-in-vscode" class="md-nav__link">
     <span class="md-ellipsis">
       Install Jupyter Extension in VSCode 📓
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up Git 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entering-the-ai-on-laboratory-github-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entering the AI-ON-Laboratory GitHub organization 🏢
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-github-repository-within-the-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a GitHub repository within the organization 📂
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-the-repository-on-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up the repository on VSCode 🔄
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-your-code-to-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing your code to the repository 📤
     </span>
   </a>
   
@@ -605,6 +650,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#after-submitting-the-thesis-and-graduating" class="md-nav__link">
+    <span class="md-ellipsis">
+      After submitting the thesis and graduating 🏆
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources 📚
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -655,7 +718,8 @@ To get you MAC address, follow the instructions below:</p>
 </ol>
 </li>
 </ul>
-<h3 id="install-vscode">Install VSCode 📁</h3>
+<h3 id="install-visual-studio-code">Install Visual Studio Code 📁</h3>
+<p>Visual Studio Code is a lightweight code editor that supports Python development. Follow these steps to install VSCode on your computer:</p>
 <ul>
 <li>If you have a Windows machine, download VSCode from the Microsoft Store</li>
 <li>Otherwise<ol>
@@ -667,6 +731,7 @@ To get you MAC address, follow the instructions below:</p>
 </li>
 </ul>
 <h3 id="install-jupyter-extension-in-vscode">Install Jupyter Extension in VSCode 📓</h3>
+<p>Jupyter is an interactive computing environment that allows you to write and run Python code in a notebook format. Follow these steps to install the Jupyter extension in VSCode:</p>
 <ol>
 <li>Open VSCode.</li>
 <li>Click on the Extensions icon in the left sidebar or press <code>Ctrl + Shift + X</code> (Windows/Linux) or <code>Cmd + Shift + X</code> (macOS).</li>
@@ -675,6 +740,77 @@ To get you MAC address, follow the instructions below:</p>
 <li>Click the "Install" button to install the extension.</li>
 <li>Open a new terminal in VSCode by clicking on the "Terminal" button in the top menu or pressing <code>Ctrl + Shift +</code> (Windows/Linux) or <code>Cmd + Shift +</code> (macOS).</li>
 <li>Run the following command to install the Jupyter kernel: <code>bash python -m pip install ipykernel</code></li>
+</ol>
+<h3 id="setting-up-git">Setting up Git 📦</h3>
+<p>Git is a version control system that allows you to track changes in your code and collaborate with others. Follow these steps to set up Git on your computer:</p>
+<ol>
+<li>Download and install Git from the official website: <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li>Open a terminal and run the following commands to configure Git with your name and email address:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;Your email address&quot;</span>
+</code></pre></div></li>
+<li>Check that Git is installed correctly by running the following command:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>--version
+</code></pre></div></li>
+<li>If you see the Git version number, Git is installed correctly.</li>
+</ol>
+<h3 id="entering-the-ai-on-laboratory-github-organization">Entering the AI-ON-Laboratory GitHub organization 🏢</h3>
+<p>The AI-ON-Laboratory GitHub organization is where you will submit your code for the thesis project. Follow these steps to enter the organization:</p>
+<p>If you don't have a GitHub account, follow these steps to create one:</p>
+<ol>
+<li>Go to the GitHub website: <a href="https://github.com">https://github.com</a></li>
+<li>Click on the "Sign up" button and follow the instructions to create an account.</li>
+<li>Verify your email address to complete the registration process.</li>
+</ol>
+<p>Once you have a GitHub account, follow these steps to enter the AI-ON-Laboratory organization:</p>
+<ol>
+<li>Give your GitHub username to a member of the Lab, we will send you an invitation to join the AI-ON-Laboratory organization.</li>
+<li>Check your email for the invitation and click on the link to accept it.</li>
+<li>Log in to your GitHub account to confirm your membership in the organization.</li>
+</ol>
+<h3 id="create-a-github-repository-within-the-organization">Create a GitHub repository within the organization 📂</h3>
+<p>A GitHub repository is a remote location where you can store and share your code with others. Follow these steps to create a GitHub repository for your project:</p>
+<ol>
+<li>Go to the GitHub website: <a href="https://github.com">https://github.com</a></li>
+<li>Log in to your GitHub account.</li>
+<li>Click on the "+" icon in the top right corner and select "New repository".</li>
+<li>Since you are working on a project for the AI-ON-Laboratory, make sure to select the "AI-ON-Laboratory" organization in the "Owner" dropdown menu.</li>
+<li>Enter a name for your repository. It must be in the form "YEAR_LASTNAME_PROJECTDESCRIPTION" (e.g., "2024_ROSSI_ImageClassification").</li>
+<li>Add a description for your repository (optional).</li>
+<li>Since you will be working with private data, make sure to select the "Private" option.</li>
+<li>Click on the "Create repository" button to create the repository.</li>
+</ol>
+<h3 id="setting-up-the-repository-on-vscode">Setting up the repository on VSCode 🔄</h3>
+<p>Once you have created the repository on GitHub, you can interact with it through VSCode using the GitLens extension. Follow these steps to install the GitLens extension in VSCode:</p>
+<ol>
+<li>Open VSCode.</li>
+<li>Click on the Extensions icon in the left sidebar or press <code>Ctrl + Shift + X</code> (Windows/Linux) or <code>Cmd + Shift + X</code> (macOS).</li>
+<li>Search for "GitLens" in the Extensions Marketplace and install it.</li>
+</ol>
+<p>Once you have installed the GitLens extension, you can clone the repository to your local machine:</p>
+<ol>
+<li>Open the repository on GitHub.</li>
+<li>Click on the "Code" button and copy the URL of the repository.</li>
+<li>Open VSCode.</li>
+<li>Click on the "Source Control" icon in the left sidebar or press <code>Ctrl + Shift + G</code> (Windows/Linux) or <code>Cmd + Shift + G</code> (macOS).</li>
+<li>Click on the "Clone Repository" button.</li>
+<li>Paste the URL of the repository in the input field and press <code>Enter</code>.</li>
+<li>Select a location on your local machine to clone the repository.</li>
+<li>Open the cloned repository in VSCode by clicking on the "Open Repository" button.</li>
+</ol>
+<h3 id="pushing-your-code-to-the-repository">Pushing your code to the repository 📤</h3>
+<p>Once you have written your code, you can push it to the repository on GitHub. Follow these steps to push your code to the repository:</p>
+<ol>
+<li>Click on the "Source Control" icon in the left sidebar.</li>
+<li>In the message field write a commit message shortly describing the changes you made.</li>
+<li>Click on the "+" button on the right side of the files that you want to commit, in this way you will stage them.</li>
+<li>Click on the "Commit" button to commit the changes.</li>
+<li>Click on the "..." button and select "Push" to push the changes to the remote repository on GitHub.</li>
+</ol>
+<p>If you are collaborating with others on the same repository, make sure to pull the latest changes before working on your code:</p>
+<ol>
+<li>Click on the "Source Control" icon in the left sidebar.</li>
+<li>Click on the "..." button and select "Pull" to pull the latest changes from the remote repository.</li>
 </ol>
 <h2 id="best-practices-for-writing-python-code">Best Practices for Writing Python Code ✍️</h2>
 <h3 id="writing-clean-and-readable-code">Writing Clean and Readable Code</h3>
@@ -717,13 +853,24 @@ To get you MAC address, follow the instructions below:</p>
 <li>Review your code for readability and reproducibility (e.g., set fixed random states in functions that require them).</li>
 <li>Test your code thoroughly to ensure it works as expected.</li>
 <li>Document your code using comments and docstrings.</li>
-<li>Upload your code on a repository in the AI-ON-Laboratory GitHub organization.<ul>
-<li>Ask for access to the GitHub organization "AI-ON-Laboratory" to submit your code.</li>
-<li>Write a README file with instructions on how to run your code.</li>
-<li>Create a repository in the organization named "YYYY_LASTNAME_PROJECTDESCRIPTION" (e.g., "2024_ROSSI_ImageClassification").</li>
-<li>Push your code to the repository and notify the AI-ON-Laboratory team.</li>
+<li>Write a README file that explains how to run your code and reproduce your results.</li>
+<li>After all your code and data is pushed to the repository, inform the Lab members that your work is ready for review.</li>
 </ul>
-</li>
+<h2 id="after-submitting-the-thesis-and-graduating">After submitting the thesis and graduating 🏆</h2>
+<ul>
+<li>Celebrate your achievement with your friends and family.</li>
+<li>Update your LinkedIn profile and resume with your new skills and accomplishments.</li>
+<li>REMOVE from your computer any sensitive data related to the project.</li>
+</ul>
+<h2 id="additional-resources">Additional Resources 📚</h2>
+<ul>
+<li><a href="https://docs.python.org/3.11/">Python Documentation</a></li>
+<li><a href="https://pep8.org/">PEP 8 Style Guide</a></li>
+<li><a href="https://code.visualstudio.com/docs">VSCode Documentation</a></li>
+<li><a href="https://jupyter.org/documentation">Jupyter Documentation</a></li>
+<li><a href="https://git-scm.com/doc">Git Documentation</a></li>
+<li><a href="https://guides.github.com/">GitHub Guides</a></li>
+<li><a href="https://stackoverflow.com/">Stack Overflow</a> - for coding questions and troubleshooting</li>
 </ul>
 
 
