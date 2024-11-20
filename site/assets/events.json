@@ -1,0 +1,25 @@
+[
+    {
+      "title": "Evento 1",
+      "start": "2024-09-15"
+    },
+    {
+      "title": "Evento 2",
+      "start": "2024-09-20",
+      "end": "2024-09-22",
+      "description": "Descripción del evento 2",
+      "location": "Ubicación del evento 2",
+      "backgroundColor": "#ff0000",
+      "borderColor": "#ff0000"
+    },
+    {
+      "title": "Evento 2",
+      "start": "2024-09-20",
+      "end": "2024-09-22",
+      "description": "Descripción del evento 2",
+      "location": "Ubicación del evento 2",
+      "backgroundColor": "green",
+      "borderColor": "#ff0000"
+    }
+  ]
+  

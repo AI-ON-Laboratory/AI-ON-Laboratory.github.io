@@ -39,7 +39,6 @@ nav:
   - I3Lung data curation 🛠️: i3lung-data-curation/instructions.md
   - I3Lung data analysis 📊: i3lung-data-analysis/instructions.md
   - Master students 🎓: master/instructions.md
-  - Calendar 📅: calendar/calendar.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -56,10 +55,5 @@ markdown_extensions:
   - attr_list
 
 extra_css:
-  - calendar/calendar.css
   - stylesheets/extra.css
   - stylesheets/images.css
-
-extra_javascript:
-  - https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js
-  - calendar/calendar.js
