@@ -36,66 +36,69 @@ body * {
 }
 
 body:has(.thesis-page-marker) .md-sidebar,
-body:has(.thesis-page-marker) .md-sidebar--secondary {
+body.thesis-index-page .md-sidebar,
+body:has(.thesis-page-marker) .md-sidebar--secondary,
+body.thesis-index-page .md-sidebar--secondary {
     display: none;
 }
 
-body:has(.thesis-page-marker) .md-content {
+body:has(.thesis-page-marker) .md-content,
+body.thesis-index-page .md-content {
     margin: 0;
 }
 
-body:has(.thesis-page-marker) .md-main__inner.md-grid {
+body:has(.thesis-page-marker) .md-main__inner.md-grid,
+body.thesis-index-page .md-main__inner.md-grid {
     max-width: min(1800px, 98vw);
-}
-
-body:has(.thesis-page-marker) .md-content__inner {
-    max-width: none;
-}
-
-html:has(.thesis-page-marker),
-body:has(.thesis-page-marker) {
-    height: 100dvh;
-    overflow: hidden;
-}
-
-body:has(.thesis-page-marker) .md-container {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-body:has(.thesis-page-marker) .md-main {
-    flex: 1;
-    min-height: 0;
-}
-
-body:has(.thesis-page-marker) .md-footer,
-body:has(.thesis-page-marker) .md-top {
-    display: none;
-}
-
-body:has(.thesis-page-marker) .md-main,
-body:has(.thesis-page-marker) .md-main__inner,
-body:has(.thesis-page-marker) .md-content {
-    overflow: hidden;
-}
-
-body:has(.thesis-page-marker) .md-main__inner.md-grid {
     height: calc(100dvh - 7.5rem);
 }
 
-body:has(.thesis-page-marker) .md-content__inner {
+body:has(.thesis-page-marker) .md-content__inner,
+body.thesis-index-page .md-content__inner {
+    max-width: none;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-body:has(.thesis-page-marker) .md-typeset > h1 {
+html:has(.thesis-page-marker),
+body:has(.thesis-page-marker),
+body.thesis-index-page {
+    height: 100dvh;
+    overflow: hidden;
+}
+
+body:has(.thesis-page-marker) .md-container,
+body.thesis-index-page .md-container {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body:has(.thesis-page-marker) .md-main,
+body.thesis-index-page .md-main {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+body:has(.thesis-page-marker) .md-main__inner,
+body.thesis-index-page .md-main__inner,
+body:has(.thesis-page-marker) .md-content,
+body.thesis-index-page .md-content {
+    overflow: hidden;
+}
+
+body:has(.thesis-page-marker) .md-footer,
+body.thesis-index-page .md-footer,
+body:has(.thesis-page-marker) .md-top,
+body.thesis-index-page .md-top {
     display: none;
 }
 
+body:has(.thesis-page-marker) .md-typeset > h1,
 body.thesis-index-page .md-typeset > h1 {
     display: none;
 }
@@ -220,26 +223,34 @@ body.thesis-detail-embed .md-typeset h1 {
 
 @media screen and (max-width: 76.1875em) {
     html:has(.thesis-page-marker),
-    body:has(.thesis-page-marker) {
+    body:has(.thesis-page-marker),
+    body.thesis-index-page {
         height: auto;
         overflow: auto;
     }
 
-    body:has(.thesis-page-marker) .md-container {
+    body:has(.thesis-page-marker) .md-container,
+    body.thesis-index-page .md-container {
         height: auto;
         display: block;
         overflow: visible;
     }
 
     body:has(.thesis-page-marker) .md-footer,
-    body:has(.thesis-page-marker) .md-top {
+    body.thesis-index-page .md-footer,
+    body:has(.thesis-page-marker) .md-top,
+    body.thesis-index-page .md-top {
         display: block;
     }
 
     body:has(.thesis-page-marker) .md-main,
+    body.thesis-index-page .md-main,
     body:has(.thesis-page-marker) .md-main__inner,
+    body.thesis-index-page .md-main__inner,
     body:has(.thesis-page-marker) .md-content,
-    body:has(.thesis-page-marker) .md-content__inner {
+    body.thesis-index-page .md-content,
+    body:has(.thesis-page-marker) .md-content__inner,
+    body.thesis-index-page .md-content__inner {
         overflow: visible;
         height: auto;
     }
