@@ -6,7 +6,8 @@
 
 ## Goal
 
-To develop a digital twin of NSCLC patients based on embeddings derived from longitudinal clinical reports, capable of:
+Develop a digital twin of NSCLC patients based on embeddings derived from longitudinal clinical reports, capable of:
+
 - Representing patient health status over time  
 - Simulating disease progression under different therapies  
 - Supporting downstream predictive models  
