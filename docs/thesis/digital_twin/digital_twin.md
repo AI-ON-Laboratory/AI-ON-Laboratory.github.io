@@ -39,3 +39,10 @@ This project focuses on the development of a patient-specific digital twin using
 
 - Duration: approximately 9 months 
 - Starting date: as soon as possible
+
+---
+
+## Contacts
+
+- Vanja Miskovic (vanja.miskovic@polimi.it)
+- Alberto Ferrarin (Alberto.Ferrarin@istitutotumori.mi.it)

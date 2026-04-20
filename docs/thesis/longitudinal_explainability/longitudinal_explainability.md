@@ -38,3 +38,10 @@ Machine Learning fundamentals course
 
 - Duration: approximately 9 months 
 - Flexible start: no mandatory starting date
+
+---
+
+## Contacts
+
+- Vanja Miskovic (vanja.miskovic@polimi.it)
+- Sara Ferri (Sara.Ferri@istitutotumori.mi.it)
