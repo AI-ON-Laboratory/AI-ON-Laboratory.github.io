@@ -16,6 +16,6 @@ hide:
     </aside>
 
     <div class="thesis-panel">
-        <iframe class="thesis-frame thesis-frame--booting" name="thesis-frame" src="digital_twin/digital_twin/" title="Thesis detail"></iframe>
+        <iframe class="thesis-frame thesis-frame--booting" name="thesis-frame" src="about:blank" title="Thesis detail"></iframe>
     </div>
 </div>
