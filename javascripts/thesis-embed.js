@@ -1,19 +1,32 @@
 (function () {
-    // Ensure GA4 is loaded
-    if (typeof window.gtag === "undefined") {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
+    var gaMeasurementId = "G-ZWDT01E4XX";
+
+    function ensureGaLoaded() {
+        if (typeof window.gtag === "function") {
+            return;
         }
-        gtag("js", new Date());
-        gtag("config", "G-ZWDT01E4XX");
-        window.gtag = gtag;
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            window.dataLayer.push(arguments);
+        };
 
         var gtagScript = document.createElement("script");
         gtagScript.async = true;
-        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZWDT01E4XX";
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=" + gaMeasurementId;
+        gtagScript.onload = function () {
+            window.gtag("js", new Date());
+            window.gtag("config", gaMeasurementId, { send_page_view: true });
+            window.gtag("event", "page_view", {
+                page_path: window.location.pathname,
+                page_location: window.location.href,
+                page_title: document.title
+            });
+        };
         document.head.appendChild(gtagScript);
     }
+
+    ensureGaLoaded();
 
     var hasThesisIndexMarker = !!document.querySelector(".thesis-page-marker");
     var path = window.location.pathname || "";
