@@ -3,9 +3,6 @@ theme:
   name: material
   logo: assets/logo.jpg
   favicon: assets/logo.jpg
-  analytics:
-    provider: google
-    property: G-M4J1PJ3L44
   features:
     - navigation.tabs
     - navigation.sections
@@ -37,6 +34,11 @@ extra_css:
 
 extra_javascript:
   - javascripts/thesis-embed.js
+
+extra:
+  analytics:
+    provider: google
+    property: G-M4J1PJ3L44
 
 nav:
   - Thesis: thesis/index.md

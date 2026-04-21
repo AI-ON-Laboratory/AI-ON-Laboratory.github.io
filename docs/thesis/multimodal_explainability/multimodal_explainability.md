@@ -33,3 +33,10 @@ A plus: prior exposure to XAI methods (SHAP, LIME, Grad-CAM).
 ## Timeline
 
 Duration: 6 to 9 months, with start in September.
+
+---
+
+# Contacts
+
+- Vanja Miskovic (vanja.miskovic@polimi.it)
+- Cristina Licciardello (cristinamaria.licciardello@polimi.it)
