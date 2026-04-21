@@ -84,6 +84,26 @@
         }
     }
 
+    function trackThesisClick(link) {
+        if (!link || typeof window.gtag !== "function") {
+            return;
+        }
+
+        var thesisName = (link.getAttribute("data-thesis") || link.textContent || "").trim();
+        var href = link.getAttribute("href") || "";
+        var hrefParts = href.split("/").filter(Boolean);
+        var thesisSlug = hrefParts.length > 0 ? hrefParts[0] : "unknown";
+
+        window.gtag("event", "thesis_click", {
+            event_category: "thesis",
+            event_label: thesisName,
+            thesis_name: thesisName,
+            thesis_slug: thesisSlug,
+            thesis_href: href,
+            page_path: window.location.pathname
+        });
+    }
+
     if (hasThesisIndexMarker) {
         document.body.classList.add("thesis-index-page");
 
@@ -128,7 +148,8 @@
 
             var thesisLinks = document.querySelectorAll(".thesis-index__link[target='thesis-frame']");
             for (var l = 0; l < thesisLinks.length; l++) {
-                thesisLinks[l].addEventListener("click", function () {
+                thesisLinks[l].addEventListener("click", function (event) {
+                    trackThesisClick(event.currentTarget);
                     markFrameBooting(detailFrame);
                 });
             }
