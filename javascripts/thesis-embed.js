@@ -1,4 +1,20 @@
 (function () {
+    // Ensure GA4 is loaded
+    if (typeof window.gtag === "undefined") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-ZWDT01E4XX");
+        window.gtag = gtag;
+
+        var gtagScript = document.createElement("script");
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZWDT01E4XX";
+        document.head.appendChild(gtagScript);
+    }
+
     var hasThesisIndexMarker = !!document.querySelector(".thesis-page-marker");
     var path = window.location.pathname || "";
     var isThesisDetailPath = /\/thesis\/[^/]+\/[^/]+\/?$/.test(path);
