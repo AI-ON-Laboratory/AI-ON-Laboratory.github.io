@@ -3,6 +3,9 @@ theme:
   name: material
   logo: assets/logo.jpg
   favicon: assets/logo.jpg
+  analytics:
+    provider: google
+    property: G-M4J1PJ3L44
   features:
     - navigation.tabs
     - navigation.sections
@@ -58,7 +61,3 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.mark
   - attr_list
-
-extra_css:
-  - stylesheets/extra.css
-  - stylesheets/images.css
