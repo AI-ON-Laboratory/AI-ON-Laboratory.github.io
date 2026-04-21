@@ -38,7 +38,7 @@ extra_javascript:
 extra:
   analytics:
     provider: google
-    property: G-M4J1PJ3L44
+    property: G-ZWDT01E4XX
 
 nav:
   - Thesis: thesis/index.md
