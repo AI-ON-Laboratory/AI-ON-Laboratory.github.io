@@ -16,6 +16,7 @@ Develop a digital twin of NSCLC patients based on embeddings derived from longit
 
 ## Data
 
+- Source: Apollo 11 project
 - Unstructured clinical text (medical reports)  
 - Longitudinal tabular clinical data (e.g., treatments, clinical variables, outcomes)
 
