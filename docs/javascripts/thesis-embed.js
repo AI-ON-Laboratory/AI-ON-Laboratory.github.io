@@ -1,7 +1,7 @@
 (function () {
     var hasThesisIndexMarker = !!document.querySelector(".thesis-page-marker");
     var path = window.location.pathname || "";
-    var isThesisDetailPath = /\/thesis\/[^/]+\/[^/]+\/?$/.test(path);
+    var isThesisDetailPath = /\/(?:thesis|internship)\/[^/]+\/[^/]+\/?$/.test(path);
     var isInsideIframe = window.self !== window.top;
     var themeAttrs = [
         "data-md-color-scheme",
@@ -48,6 +48,34 @@
                 return;
             }
             applyThemeAttrs(doc, readThemeAttrs(document.body));
+        } catch (e) {
+            // Ignore transient iframe access errors during navigation.
+        }
+    }
+
+    function openDetailLinksInNewTab(frame) {
+        if (!frame) {
+            return;
+        }
+
+        try {
+            var doc = frame.contentDocument;
+            if (!doc || !doc.body) {
+                return;
+            }
+
+            var links = doc.querySelectorAll('a[href]');
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                var href = link.getAttribute('href') || '';
+
+                if (!href || href.charAt(0) === '#') {
+                    continue;
+                }
+
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
         } catch (e) {
             // Ignore transient iframe access errors during navigation.
         }
@@ -113,10 +141,12 @@
 
             detailFrame.addEventListener("load", function () {
                 syncThemeToDetailFrame(detailFrame);
+                openDetailLinksInNewTab(detailFrame);
                 markFrameReady(detailFrame);
             });
 
             syncThemeToDetailFrame(detailFrame);
+            openDetailLinksInNewTab(detailFrame);
 
             if (detailFrame.contentDocument && detailFrame.contentDocument.readyState === "complete") {
                 markFrameReady(detailFrame);

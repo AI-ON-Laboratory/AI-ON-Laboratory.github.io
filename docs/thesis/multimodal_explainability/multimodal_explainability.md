@@ -4,7 +4,7 @@
 
 ## Goal
 
-Explainability is a clinical and ethical requirement in oncology — clinicians cannot trust what they cannot understand. Despite the promise of multimodal AI models for cancer prognosis, XAI methods for such architectures remain largely underdeveloped, representing a significant open gap in the literature.
+Explainability is a clinical and ethical requirement in oncology - clinicians cannot trust what they cannot understand. Despite the promise of multimodal AI models for cancer prognosis, XAI methods for such architectures remain largely underdeveloped, representing a significant open gap in the literature.
 
 The thesis aims to design, implement, and evaluate an XAI framework for multimodal fusion models integrating clinical/blood data, digital pathology images, and CT scans of NSCLC patients, with the clinical goal of supporting oncologists in patient stratification and treatment decision-making.
 

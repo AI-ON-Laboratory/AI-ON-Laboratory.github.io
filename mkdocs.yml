@@ -42,6 +42,7 @@ extra:
 
 nav:
   - Thesis: thesis/index.md
+  - Internship activation: internship/index.md
   - Master students 🎓: master/instructions.md
 
 markdown_extensions:
@@ -52,6 +53,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path:
         - docs
+        - .
       check_paths: true
   - admonition
   - pymdownx.arithmatex:
